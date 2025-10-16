@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e3f2ff, #f7e8ff);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #5b0eeb, #2196f3);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid #ffffff40;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  color: #ffe36d;
+  transform: scale(1.08);
+}
+
+/* Section */
+section {
+  flex: 1;
+  background: white;
+  width: 90%;
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Typography */
+h2 {
+  text-align: center;
+  color: #4b0082;
+  margin-bottom: 15px;
+}
+
+p {
+  text-align: center;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: #f5f5ff;
+  border-left: 4px solid #5b0eeb;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+/* Table (Bio-data) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #eef1ff;
+  color: #333;
+}
+
+tr:hover {
+  background: #f9f9ff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(90deg, #2196f3, #5b0eeb);
+  color: white;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  border-top: 3px solid #ffffff40;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+  nav a {
+    display: inline-block;
+    margin: 6px;
+  }
+  section {
+    padding: 15px;
+  }
+}
